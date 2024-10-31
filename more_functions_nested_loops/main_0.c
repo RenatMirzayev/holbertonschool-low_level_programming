@@ -1,8 +1,5 @@
 #include "main.h"
 
-/* Function prototype */
-void print_triangle(int size);
-
 /**
  * main - check the code
  *

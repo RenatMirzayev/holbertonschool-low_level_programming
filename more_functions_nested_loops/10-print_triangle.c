@@ -1,31 +1,25 @@
 #include "main.h"
 
-/**
- * print_triangle - prints a triangle of a given size
- * @size: the size of the triangle
- */
 void print_triangle(int size)
 {
-    int row, spaces, hashes;
+    int row, space, hash;
 
-    if (size <= 0) /* If size is 0 or less, print a new line */
+    if (size <= 0)
     {
-        _putchar('\n');
+        _putchar('\n'); /* Print a new line if size is 0 or less */
         return;
     }
 
-    for (row = 1; row <= size; row++) /* Loop through each row */
+    for (row = 1; row <= size; row++)
     {
-        /* Print spaces */
-        for (spaces = size - row; spaces > 0; spaces--)
+        for (space = size - row; space > 0; space--)
         {
-            _putchar(' ');
+            _putchar(' '); /* Print spaces */
         }
-        /* Print hashes */
-        for (hashes = 1; hashes <= row; hashes++)
+        for (hash = 1; hash <= row; hash++)
         {
-            _putchar('#');
+            _putchar('#'); /* Print hashes */
         }
-        _putchar('\n'); /* Move to the next line after each row */
+        _putchar('\n'); /* Move to the next line */
     }
 }
