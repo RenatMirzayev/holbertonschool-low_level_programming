@@ -1,12 +1,18 @@
-#include <stdio.h>
-#include "main.h"  /* Make sure this includes the prototype for _isdigit*/
+#include "main.h"
 
-int main(void) {
-    char c = '5';
-    if (_isdigit(c)) {
-        printf("%c is a digit.\n", c);
-    } else {
-        printf("%c is not a digit.\n", c);
-    }
-    return 0;
+/* Function prototype */
+void print_triangle(int size);
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_triangle(2);
+    print_triangle(10);
+    print_triangle(1);
+    print_triangle(0);
+    return (0);
 }
