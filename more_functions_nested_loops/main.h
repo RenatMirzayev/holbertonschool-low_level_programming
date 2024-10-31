@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _isdigit(int c);
-int _putchar(char c);  // Include this if you have a _putchar function
+int _putchar(char c);  /* Include this if you have a _putchar function */
 
 #endif /* MAIN_H */
