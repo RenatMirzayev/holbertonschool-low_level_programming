@@ -11,6 +11,7 @@
 void print_triangle(int size)
 {
     int row, spaces;
+    int hashes;  /* Declare hashes here */
 
     if (size <= 0)
     {
@@ -24,7 +25,7 @@ void print_triangle(int size)
         {
             _putchar(' ');
         }
-        for (int hashes = 1; hashes <= row; hashes++) /* Print hashes */
+        for (hashes = 1; hashes <= row; hashes++) /* Print hashes */
         {
             _putchar('#');
         }
