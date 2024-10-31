@@ -1,8 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _isdigit(int c);
-int _putchar(char c);  /* Include this if you have a _putchar function */
+int _putchar(char c);
+void print_numbers(void); /* Ensure this line is present */
 
 #endif /* MAIN_H */
-int mul(int a, int b);
