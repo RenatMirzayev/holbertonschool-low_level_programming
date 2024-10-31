@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
-void print_numbers(void); /* Ensure this line is present */
+void print_most_numbers(void); /* Function prototype */
 
 #endif /* MAIN_H */
