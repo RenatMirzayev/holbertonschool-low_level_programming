@@ -6,7 +6,7 @@
  */
 void print_diagonal(int n)
 {
-    int i, j;  /* Declare loop variables */
+    int i, j;
 
     if (n <= 0)  /* If n is 0 or less */
     {
@@ -14,14 +14,14 @@ void print_diagonal(int n)
     }
     else
     {
-        for (i = 0; i < n; i++)  /* Loop for each line */
+        for (i = 0; i < n; i++)  /* Loop n times */
         {
-            for (j = 0; j < i; j++)  /* Print spaces */
+            for (j = 0; j < i; j++)
             {
-                _putchar(' ');  /* Print a space */
+                _putchar(' ');  /* Print spaces for the diagonal */
             }
             _putchar('\\');  /* Print the diagonal character */
-            _putchar('\n');  /* Print newline at the end */
+            _putchar('\n');  /* Print newline at the end of each line */
         }
     }
 }
