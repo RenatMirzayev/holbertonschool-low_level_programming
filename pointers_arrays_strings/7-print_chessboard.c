@@ -1,31 +1,21 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @n: string
- * Return: a pointer to the changed string
+ * print_chessboard - prints chessboard
+ * @a: pointer
  */
 
-char *cap_string(char *n)
+void print_chessboard(char (*a)[8])
 {
-	int i = 0;
+	int i, j;
 
-	if (n[0] >= 'a' && n[0] <= 'z')
-	n[0] -= 32;
-
-	while (n[i] != '\0')
+	for (i = 0; i < 8; i++)
 	{
-		if (n[i] == ' ' || n[i] == '\t' || n[i] == '\n' ||
-			n[i] == ',' || n[i] == ';' || n[i] == '.' ||
-			n[i] == '!' || n[i] == '?' || n[i] == '"' ||
-			n[i] == '(' || n[i] == ')' || n[i] == '{' || n[i] == '}')
+		for (j = 0; j < 8; j++)
 		{
-			if (n[i + 1] >= 'a' && n[i + 1] <= 'z')
-			{
-				n[i + 1] -= 32;
-			}
+			_putchar(a[i][j]);
 		}
-		i++;
+
+	_putchar('\n');
 	}
-	return (n);
 }
